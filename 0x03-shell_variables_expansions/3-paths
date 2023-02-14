@@ -1,2 +1,2 @@
 #!/bin/bash
-array=(${PATH//:/ }); echo ${#array[@]}
+echo $PATH | TR ':' '\n' | wc -l
